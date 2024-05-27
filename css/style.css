@@ -165,3 +165,40 @@ text-align: center;
 
    
 }
+.pied-de-page {
+    background-color: #353535;
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.pied-de-page h3 {
+    color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+ 
+}
+
+.logo-pied-de-page {
+    display: flex;
+    justify-content: left;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    
+}
+
+.propos-restaurant, .devenir-partenaire, .mentions-legales, .contact {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: -25px; /* Optionnel : ajoutez un espace entre les éléments */
+    margin-left: 15px;
+}
+
+.propos-restaurant img, .devenir-partenaire img {
+    margin-right: 10px; /* Optionnel : ajoutez un espace entre l'icône et le texte */
+}
