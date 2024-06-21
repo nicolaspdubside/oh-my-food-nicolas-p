@@ -1,3 +1,8 @@
+/* Pour les écrans de taille mobile */
+@media only screen and (max-width: 768px) {
+
+    /* affiche generale page index 768px */
+
 header {
     width: 100%;
 }
@@ -68,6 +73,9 @@ header {
     color: #000000;
     margin: 0; /* Supprimer les marges par défaut */
 }
+
+/* bouton index pour 768px max */
+
 .btn-resto {
     width: 218px;
     height: 50px;
@@ -108,7 +116,7 @@ header {
     margin-right: 15px;
 }
 
-
+/* Pour les page index restaurants 768px */ 
 .restaurants {
     background-color:  #F6F6F6; 
     width: 100%;
@@ -176,8 +184,10 @@ header {
 .fiter-title {
     display: flex;
 
-   
 }
+
+/* Pied de page 768px */
+
 .pied-de-page {
     background-color: #353535;
     width: 100%;
@@ -215,16 +225,16 @@ header {
 .propos-restaurant img, .devenir-partenaire img {
     margin-right: 10px; /* Optionnel : ajoutez un espace entre l'icône et le texte */
 }
-.resto-menu { 
+
+/* Pour les menu 768px */
+
+.resto-menu {
     width: 100%;
     height: auto;
- 
-   
 }
 
 .resto-menu .img-resto {
     border-radius: 0;
-
 }
 
 .resto-menu h2 {
@@ -238,10 +248,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%; /* ou ajustez en fonction de votre mise en page */
+    width: 100%;
     border-radius: 25px 25px 0 0;
     background-color: #F6F6F6;
-   margin-top: -60px;
+    margin-top: -60px;
 }
 
 .menu-title h1 {
@@ -249,26 +259,24 @@ header {
     font-size: 28px;
     font-weight: 400;
     font-style: normal;
-    margin-top: 25px; /* Pour éviter tout espacement indésirable */
-    margin-left: 15px;
+    margin-top: 25px;
+    margin-left: 10px;
 }
 
 .resto-menu .coeur-menu {
-    height: auto; /* Taille par défaut de l'image */
-    width: auto; /* Taille par défaut de l'image */
+    height: auto;
+    width: auto;
     margin-right: 100px;
 }
+
 .entree-menu,
 .plat-menu,
 .dessert-menu {
     width: 100%;
     height: auto;
-
     background-color: #F6F6F6;
-    text-align: left; /* Ajouté pour aligner le contenu à gauche */
+    text-align: left;
 }
-
-
 
 .title-entrees h2,
 .title-plats h2,
@@ -278,7 +286,7 @@ header {
     font-weight: normal;
     line-height: 18px;
     text-align: left;
-    margin-left: 15px;
+    margin-left: 10px;
     margin-right: 15px;
 }
 
@@ -291,13 +299,10 @@ header {
 .card-entree-menu,
 .card-plat-menu,
 .card-dessert-menu {
-    background-color: white;
-    width: 100%;
-    height: auto;
-    padding: 15px;
-    margin-left: 15px;
-}
-
+        width: 95%;
+        margin-left: 10px;
+        margin-right: 15px;
+    }
 .card-entree-menu .title-entree-menu,
 .card-plat-menu .title-plat-menu,
 .card-dessert-menu .title-dessert-menu {
@@ -306,7 +311,6 @@ header {
     font-weight: 500;
     line-height: 21.09px;
     text-align: left;
-   
 }
 
 .card-entree-menu .sub-title-entree-menu,
@@ -319,6 +323,73 @@ header {
     text-align: left;
 }
 
+.restaurants {
+    background-color: #F6F6F6;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.restaurants-title {
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.restaurants-title h2 {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #000000;
+}
+
+.restaurants-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.restaurants-cards img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card-content {
+    margin-top: -10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.card-subtitle {
+    font-size: 14px;
+    margin-top: -8px;
+    margin-bottom: 8px;
+    margin-left: 10px;
+}
+
+.card-rating {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.fiter-title {
+    display: flex;
+}
+
+/* bouton commander pour page menu 768px */
+
 .button-commander {
     display: flex;
     flex-direction: row;
@@ -330,9 +401,11 @@ header {
 
 .button-commander button {
     color: white;
-    width: 186px;
+    width: auto;
     height: 50px;
     top: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
     border-radius: 25px;
     background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
     box-shadow: 0px 4px 10px 0px #00000040;
@@ -353,5 +426,284 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+}
+@media (min-width: 768px) {
+/* Presentation desktop max */
+
+header {
+    width: 100%;
+}
+
+.logo {
+    display: flex; /* Utiliser Flexbox */
+    justify-content: center; /* Centrer le contenu horizontalement */
+    align-items: center; /* Centrer le contenu verticalement */
+    position: relative; /* Pour pouvoir positionner la flèche */
+    width: 100%;
+    text-align: center;
+}
+
+.img_flache-gauche {
+    position: absolute;
+    left: 0; /* Aligner la flèche à gauche */
+}
+
+.img-logo {
+    margin: 0 auto; /* Centrer le logo */
+}
+.location {
+    background-color: #EAEAEA;
+    width: 100%;
+    height: 63px;
+    border-top: 2px solid #00000040;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+}
+
+.location h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px; /* Corriger la propriété font-size */
+    color: #353535;
+    margin: 0; /* Supprimer les marges par défaut */
+}
+.title-solgan {
+    width: 100%px;
+    height: 68px;
+    margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.title-slogan h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 24px; /* Corriger la propriété font-size */
+    color: #000000;
+    margin: 0; /* Supprimer les marges par défaut */
+}
+.sub-title-solgan {
+    width: 100%px;
+    height: 68px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.sub-title-solgan h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300; /* Modifiez le poids de la police */
+    font-size: 18px; /* Gardez la taille de la police */
+    color: #000000;
+    margin: 0; /* Supprimer les marges par défaut */
+}
+
+/* bouton index desktop max */
+
+.btn-resto {
+    width: 218px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+.btn-resto img {
+    width: 218px;
+    height: 50px;
+}
+
+.btn-search-list {
+    background-color: #F6F6F6;
+    height: 49px;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    justify-content: left; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+    box-shadow: 0px 4px 15px 0px #00000026;
+}
+
+.btn-search-list h3 {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    text-align: left;
+}
+
+.btn-search-list img {
+    width: 18px;
+    height: 18px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* Conteneur des boutons */
+.btn-search-container {
+    display: flex; /* Utiliser Flexbox pour aligner les éléments horizontalement */
+    justify-content: space-between; /* Espacer les éléments */
+    align-items: center; /* Aligner les éléments au centre verticalement */
+    width: 70%;
+    margin: 0 auto; /* Centrer horizontalement le conteneur dans la page */
+}
+
+.btn-search-list {
+    width: 30%; /* Chaque bouton prend 30% de la largeur du conteneur */
+    margin-top: 0; /* Annuler la marge supérieure pour les grands écrans */
+}
+/* bouton menu desktop max */
+
+.button-commander {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top:25px;
+    margin-bottom: 25px;
+    margin-left: 15px;
+}
+
+.button-commander button {
+    color: white;
+    width: auto;
+    height: 50px;
+    top: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 25px;
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    box-shadow: 0px 4px 10px 0px #00000040;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-commander button a {
+    color: white;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* affichange index par 2 fois 2 desktop max */
+
+.restaurants {
+    background-color: #F6F6F6;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap; /* Permettre le retour à la ligne des éléments */
+    justify-content: space-between; /* Espacement égal entre les éléments */
+    padding: 0 15%; /* Ajouter une marge de 15% à gauche et à droite */
+    box-sizing: border-box; /* Inclure les marges dans la largeur totale */
+}
+
+.restaurants-title {
+    width: 100%;
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.restaurants-title h2 {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #000000;
+}
+
+.restaurants-cards {
+    width: calc(50% - 20px); /* Chaque carte prend 50% de la largeur moins 20px pour la marge */
+    margin-bottom: 20px; 
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: white; /* Pour mieux visualiser les cartes */
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 200px; /* Ajuster la hauteur de l'image selon vos besoins */
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card-subtitle {
+    margin-top: -5px;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.card-rating {
+    margin-top: -5px;
+    font-size: 14px;
+}
+
+
+/* Pied de page desktop max */
+
+.pied-de-page {
+    background-color: #353535;
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.pied-de-page h3 {
+    color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+ 
+}
+
+.logo-pied-de-page {
+    display: flex;
+    justify-content: left;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    
+}
+
+.propos-restaurant, .devenir-partenaire, .mentions-legales, .contact {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: -25px; /* Optionnel : ajoutez un espace entre les éléments */
+    margin-left: 15px;
+}
+
+.propos-restaurant img, .devenir-partenaire img {
+    margin-right: 10px; /* Optionnel : ajoutez un espace entre l'icône et le texte */
+}
 }
 
